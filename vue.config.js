@@ -1,7 +1,8 @@
 module.exports = {
   configureWebpack: {
     output: {
-      globalObject: 'this',
+      globalObject: "this"
     }
-  }
-}
+  },
+  runtimeCompiler: true
+};
