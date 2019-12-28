@@ -13,7 +13,7 @@
     "sourceMap": true,
     "baseUrl": ".",
     "types": [
-      "webpack-env"
+      "node"
     ],
     "typeRoots": [
       "node_modules/@types",
@@ -26,6 +26,8 @@
       "*": ["types/*"]
     },
     "lib": [
+      "es2015",
+      "es2017",
       "esnext",
       "dom",
       "dom.iterable",

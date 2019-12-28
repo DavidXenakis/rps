@@ -6,10 +6,13 @@ import router from "./router";
 
 Vue.config.productionTip = false;
 
+if (process.env.NODE_ENV === "development") {
+  Vue.config.performance = true;
+  console.log("Vue performance enabled");
+}
+
 /* eslint-disable no-new */
 new Vue({
-  el: "#app",
   router,
-  template: "<App/>",
-  components: { App }
-});
+  render: x => x(App)
+}).$mount("#app");
